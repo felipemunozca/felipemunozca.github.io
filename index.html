@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI BLOG</title>
+
+    <style>
+        body{font-family: 'Roboto Mono', monospace; margin: 0; padding: 0;}
+        a {text-decoration: none; display: inline; color: black;}
+        .home-body {position: fixed; top: 0; bottom: 0; left: 0; right: 0;}
+        .grid-container {max-width: 980px; margin: auto;}
+        header {width: 100%; height: 90px; display: grid; grid-template-rows: 1fr 1fr;}
+        nav {display: grid; grid-template-columns: 1fr 1fr; height: 90px; display: grid; background-color: #47cfac;}
+        nav .nav-logo-container {margin-left: 50px; color: white; padding: 15px;}
+        nav .profile-link {display: flex; align-items: center; justify-content: flex-end; margin-right: 50px;}
+        nav .profile-link a { color: black; border-bottom: 1px solid black;}
+        .home-main { display: grid; grid-template-columns: 1fr 4fr 1fr; height: 100%; background-color: darkslategrey; background-position: center; background-repeat: no-repeat; background-size: cover;}
+        .home-main section {display: grid; grid-column: 2; justify-items: center; height: 350px; margin-top: 80px;}
+        .home-main-text {font-family: 'Roboto mono', monospace; font-size: 30px; font-weight: 700px; letter-spacing: 10px; color: white; text-align: center;}
+        .home-main-button {width: 110px; height: 50px; background-color: #47cfac; display: grid; align-items: center;}
+        .home-main-button a {font-weight: 700; font-size: 18px;}
+
+    </style>
+</head>
+<body class="home-body">
+    <header>
+        <nav>
+            <section class="nav-logo-container">
+                <h3>Blog de Tecnología</h3>
+            </section>
+            <section class="profile-link">
+                <a href="#">Sobre mí</a>
+            </section>
+        </nav>
+    </header>
+    <main class="home-main">
+        <section>
+            <p class="home-main-text">Conoce las novedades y noticias del mundo Tech</p>
+            <button class="home-main-button">
+                <a href="#">Entra Ya!</a>
+            </button>
+        </section>
+    </main>
+</body>
+</html>
